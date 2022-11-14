@@ -1,0 +1,1 @@
+Some automation tests using the robot framework and the seu-barriga website.
