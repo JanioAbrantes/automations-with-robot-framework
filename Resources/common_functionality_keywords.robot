@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${HOME}        https://seubarriga.wcaquino.me/
+${HOME}                 https://seubarriga.wcaquino.me/
 ${EMAIL}                jeovanio@thebug.com
 ${PASSWORD}             123456789
 

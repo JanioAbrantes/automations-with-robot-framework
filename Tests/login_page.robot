@@ -25,3 +25,11 @@ The user go to the "login"'s page and try to login with an valid email and inval
     And The user inputs the wrong password
     And The user press the "Entrar" button
     Then The "Problemas com o login do usuário" message should be displayed
+
+The user go to the "login"'s page and try to login, leaving the email and password fields empty
+    # Probabilidade: Baixo
+    # Risco: Baixo
+    Given The user is in the "login"'s page
+    When The user press the "Entrar" button
+    Then The "Email é um campo obrigatório" message should be displayed
+    And The "Senha é um campo obrigatório" message should be displayed

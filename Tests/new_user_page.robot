@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation   Some functionalitys of the new user page.
+Documentation   Testing some functionalitys of the new user page.
 
 Resource        Resources/common_functionality_keywords.robot
 Resource        Resources/new_user_page_keywords.robot
@@ -8,22 +8,24 @@ Test Setup      common_functionality_keywords.Open Window
 Test Teardown   common_functionality_keywords.Close Window
 
 *** Test Cases ***
-The user go to the "cadastro"'s page and create a new user successfully
-    # Probabilidade: Baixo
-    # Risco: Medio
+Create new user
+    [Documentation]    The user go to the "cadastro"'s page and create a new user successfully
     Given The user is in the "cadastro"'s page
-    When The user inputs the username
-    And The user inputs the email
-    And The user inputs the password
+    When The user inputs the valid values
     And The user press the "Cadastrar" button
     Then The "Usuário inserido com sucesso" message should be displayed
 
-The user go to the "cadastro"'s page and try to create an already created user
-    # Probabilidade: Medio
-    # Risco: Alto
+Create an already existing user
+    [Documentation]    The user go to the "cadastro"'s page and try to create an already created user
     Given The user is in the "cadastro"'s page
-    When The user inputs the username
-    And The user inputs an already used email
-    And The user inputs the password
+    When The user inputs the valid values with an already used email
     And The user press the "Cadastrar" button
     Then The "Endereço de email já utilizado" message should be displayed
+
+Create new user with all fields empty
+    [Documentation]    The user go to the "cadastro"'s page and click the "Cadastrar" button with all the fields empty
+    Given The user is in the "cadastro"'s page
+    When The user press the "Cadastrar" button
+    Then The "Nome é um campo obrigatório" message should be displayed
+    And The "Email é um campo obrigatório" message should be displayed
+    And The "Senha é um campo obrigatório" message should be displayed
