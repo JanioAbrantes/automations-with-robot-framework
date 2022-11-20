@@ -25,7 +25,5 @@ Create an already existing user
 Create new user with all fields empty
     [Documentation]    The user go to the "cadastro"'s page and click the "Cadastrar" button with all the fields empty
     Given The user is in the "cadastro"'s page
-    When The user press the "Cadastrar" button
-    Then The "Nome é um campo obrigatório" message should be displayed
-    And The "Email é um campo obrigatório" message should be displayed
-    And The "Senha é um campo obrigatório" message should be displayed
+    When The user press the "Cadastrar" button with all the fields empty
+    Then The user should receive an alert message for each of the empty fields

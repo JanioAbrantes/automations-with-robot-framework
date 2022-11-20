@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation   Some functionalitys of the login page.
+Documentation   Testing some functionalitys of the login page.
 
 Resource        Resources/common_functionality_keywords.robot
 Resource        Resources/login_page_keywords.robot
@@ -8,28 +8,22 @@ Test Setup      common_functionality_keywords.Open Window
 Test Teardown   common_functionality_keywords.Close Window
 
 *** Test Cases ***
-The user go to the "login"'s page and can login successfully with a valid email and password
-    # Probabilidade: Baixo
-    # Risco: Medio
+Log-in successfully
+    [Documentation]  The user go to the "login"'s page and can log-in successfully with a valid email and password
     Given The user is in the "login"'s page
-    When The user inputs the email
-    And The user inputs the password
+    When The user inputs the valid values
     And The user press the "Entrar" button
     Then The "Bem vindo, jeovanio!" message should be displayed
 
-The user go to the "login"'s page and try to login with an valid email and invalid password
-    # Probabilidade: Baixo
-    # Risco: Alto
+Log-in with invalid password
+    [Documentation]  The user go to the "login"'s page and try to log-in with an valid email and invalid password
     Given The user is in the "login"'s page
-    When The user inputs the email
-    And The user inputs the wrong password
+    When The user inputs the email with an invalid password
     And The user press the "Entrar" button
     Then The "Problemas com o login do usuário" message should be displayed
 
-The user go to the "login"'s page and try to login, leaving the email and password fields empty
-    # Probabilidade: Baixo
-    # Risco: Baixo
+Log-in with all fields empty
+    [Documentation]  The user go to the "login"'s page and try to log-in, leaving the email and password fields empty
     Given The user is in the "login"'s page
     When The user press the "Entrar" button
-    Then The "Email é um campo obrigatório" message should be displayed
-    And The "Senha é um campo obrigatório" message should be displayed
+    Then The user should receive an alert message for each of the empty fields
