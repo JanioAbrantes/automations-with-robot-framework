@@ -4,13 +4,12 @@ Library    SeleniumLibrary
 *** Variables ***
 ${RESET_BUTTON}     //a[.='reset']
 ${HOME_BUTTON}      //a[.='Home']
-${TABLE_ELEMENT}    //tr[2]
 
 
 *** Keywords ***
-The user is in the "home"'s page
+The already logged in user is in the "home"'s page
     Click Element   ${HOME_BUTTON}
-The user click on the "reset" link
-    Click Element   ${RESET_BUTTON}
-The "Conta" and "Saldo"'s field should be empty
-    Element Text Should Be   ${TABLE_ELEMENT}    None
+The user hover the mouse after the second dot of the message "Seu Barriga. Nunca mais esqueça de pagar o aluguel."
+    Mouse Over  ${RESET_BUTTON}
+No link should be there
+    Page Should Not Contain Element     ${RESET_BUTTON}

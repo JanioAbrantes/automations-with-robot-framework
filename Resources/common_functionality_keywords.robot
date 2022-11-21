@@ -13,7 +13,7 @@ ${ALERT}                class=alert
 
 *** Keywords ***
 Open Window
-    Open Browser    ${HOME}    HeadlessChrome
+    Open Browser    ${HOME}    Chrome
     Wait Until Page Contains Element    class=navbar-brand
 
 Close Window

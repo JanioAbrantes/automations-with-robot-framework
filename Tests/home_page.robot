@@ -4,8 +4,9 @@ Documentation   Testing some functionalitys of the home page.
 Resource        Resources/common_functionality_keywords.robot
 Resource        Resources/home_page_keywords.robot
 
-Test Setup      common_functionality_keywords.Open Window
-Test Teardown   common_functionality_keywords.Close Window
+Test Setup      Run Keywords     common_functionality_keywords.Open Window
+...             AND     common_functionality_keywords.The user is loged in
+#Test Teardown   common_functionality_keywords.Close Window
 
 *** Test Cases ***
 Full Account Reset
