@@ -6,7 +6,7 @@ Resource        Resources/home_page_keywords.robot
 
 Test Setup      Run Keywords     common_functionality_keywords.Open Window
 ...             AND     common_functionality_keywords.The user is loged in
-#Test Teardown   common_functionality_keywords.Close Window
+Test Teardown   common_functionality_keywords.Close Window
 
 *** Test Cases ***
 Full Account Reset
