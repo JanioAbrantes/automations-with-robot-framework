@@ -1,23 +1,10 @@
 *** Settings ***
+Documentation   The steps of the transactions_tests
+
 Library    SeleniumLibrary
 Library    FakerLibrary   locale=pt_BR
 
-*** Variables ***
-${CONTAS_BUTTON}        class=dropdown-toggle
-${LISTAR_OPTION}        //a[.='Listar']
-${SALVAR_BUTTON}        class=btn-primary
-${MOVIMENTACAO_BUTTON}  //a[.='Criar Movimentação']
-${ACCOUNT_NAME}         //td[.='Conta para movimentação']
-
-${TIPO_MOV_FIELD}       tipo
-${DATA_MOV_FIELD}       data_transacao
-${DATA_PG_FIELD}        data_pagamento
-${DESCRICAO_FIELD}      descricao
-${INTERESSADO_FIELD}    interessado
-${VALOR_FIELD}          valor
-${CONTA_FIELD}          conta
-${SITUACAO_FIELD}       status_pago
-
+Resource        Resources/transactions_page.robot
 
 *** Keywords ***
 The already logged in user has an already created account
@@ -39,8 +26,5 @@ The user populates all the fields with valid values
     Input Text                  ${DESCRICAO_FIELD}  ${random_sentences}
     Input Text                  ${INTERESSADO_FIELD}  ${random_name}
     Input Text                  ${VALOR_FIELD}  ${random_number}
-    Select From List By Label   ${CONTA_FIELD}   Conta para movimentação
+    Select From List By Label   ${CONTA_FIELD}   Conta para movimentacoes
     Click Button                ${SITUACAO_FIELD}
-
-The user press the "Salvar" button
-    Click Button    ${SALVAR_BUTTON}

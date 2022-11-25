@@ -2,7 +2,7 @@
 Documentation   Testing some functionalitys of the login page.
 
 Resource        Resources/common_functionality_keywords.robot
-Resource        Resources/login_page_keywords.robot
+Resource        login_steps.robot
 
 Test Setup      common_functionality_keywords.Open Window
 Test Teardown   common_functionality_keywords.Close Window

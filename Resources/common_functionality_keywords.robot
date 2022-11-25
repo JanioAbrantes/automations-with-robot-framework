@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
+Documentation           Some variables and keywords used by more than one test
 
 *** Variables ***
 ${HOME}                 https://seubarriga.wcaquino.me/
@@ -8,7 +8,7 @@ ${PASSWORD}             123456789
 
 ${EMAIL_FIELD}          email
 ${PASSWORD_FIELD}       senha
-${ENTRAR_BUTTON}        class=btn-primary
+${BUTTON}               class=btn-primary
 ${ALERT}                class=alert
 
 *** Keywords ***
@@ -22,9 +22,12 @@ Close Window
 The user is loged in
     Input Text      ${EMAIL_FIELD}  ${EMAIL}
     Input Text      ${PASSWORD_FIELD}  ${PASSWORD}
-    Click Button    ${ENTRAR_BUTTON}
+    Click Button    ${BUTTON}
 
 The "${message}" message should be displayed
     Wait Until Page Contains Element    ${ALERT}
     ${displayed_message}=   Get Text    ${ALERT}
     Should Be Equal                     ${message}  ${displayed_message}
+
+The user press the "${button_name}" button
+    Click Button    ${BUTTON}

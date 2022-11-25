@@ -2,7 +2,7 @@
 Documentation   Testing some functionalitys of the home page.
 
 Resource        Resources/common_functionality_keywords.robot
-Resource        Resources/home_page_keywords.robot
+Resource        home_steps.robot
 
 Test Setup      Run Keywords     common_functionality_keywords.Open Window
 ...             AND     common_functionality_keywords.The user is loged in
