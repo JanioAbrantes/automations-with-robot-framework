@@ -15,10 +15,10 @@
 <br />
 
 
-[![code with love by JanioAbrantes](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-JanioAbrantes-ff1414.svg?style=flat-square)](https://github.com/JanioAbrantes)<br />
-[![](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-KatarinaMariano-ff1414.svg?style=flat-square)](https://github.com/KatarinaMariano-QA)<br />
-[![](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-LaiseLopes-ff1414.svg?style=flat-square)](https://github.com/laise12)<br />
-[![](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-VictorCavalcante-ff1414.svg?style=flat-square)]()
+[![code with love by JanioAbrantes](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-JanioAbrantes-ff1414.svg?style=flat-square)](https://github.com/JanioAbrantes)
+[![](https://img.shields.io/badge/KatarinaMariano-ff1414.svg?style=flat-square)](https://github.com/KatarinaMariano-QA)
+[![](https://img.shields.io/badge/LaiseLopes-ff1414.svg?style=flat-square)](https://github.com/laise12)
+[![](https://img.shields.io/badge/VictorCavalcante-ff1414.svg?style=flat-square)]()
 
 </div>
 
