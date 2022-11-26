@@ -2,18 +2,18 @@
 Documentation           Some variables and keywords used by more than one test
 
 *** Variables ***
-${HOME}                 https://seubarriga.wcaquino.me/
 ${EMAIL}                jeovanio@thebug.com
+${HOME}                 https://seubarriga.wcaquino.me/
 ${PASSWORD}             123456789
 
+${ALERT}                class=alert
+${BUTTON}               class=btn-primary
 ${EMAIL_FIELD}          email
 ${PASSWORD_FIELD}       senha
-${BUTTON}               class=btn-primary
-${ALERT}                class=alert
 
 *** Keywords ***
 Open Window
-    Open Browser    ${HOME}    Chrome
+    Open Browser    ${HOME}             Chrome
     Wait Until Page Contains Element    class=navbar-brand
 
 Close Window

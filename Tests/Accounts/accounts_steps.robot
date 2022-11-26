@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation       The steps of the accounts_tests
 
-Library             SeleniumLibrary
 Library             FakerLibrary   locale=pt_BR
+Library             SeleniumLibrary
 
 Resource            Resources/accounts_page.robot
 

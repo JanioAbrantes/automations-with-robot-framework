@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation       The steps of the login_tests
 
-Library             SeleniumLibrary
 Library             FakerLibrary   locale=pt_BR
+Library             SeleniumLibrary
 
 Resource            Resources/login_page.robot
 

@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation   Testing some functionalitys of the transactions page.
 
-Resource        Tests/Transactions/transactions_steps.robot
 Resource        Resources/common_functionality_keywords.robot
+Resource        Tests/Transactions/transactions_steps.robot
 
 Test Setup      Run Keywords     common_functionality_keywords.Open Window
 ...             AND     common_functionality_keywords.The user is loged in

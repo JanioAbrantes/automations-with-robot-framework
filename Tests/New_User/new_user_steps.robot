@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation   The steps of the new_user_tests
 
-Library         SeleniumLibrary
 Library         FakerLibrary   locale=pt_BR
+Library         SeleniumLibrary
 
 Resource        Resources/new_user_page.robot
 

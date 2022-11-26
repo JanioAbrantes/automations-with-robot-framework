@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation   Testing some functionalitys of the new user page.
 
-Resource        Resources/common_functionality_keywords.robot
 Resource        new_user_steps.robot
+Resource        Resources/common_functionality_keywords.robot
 
 Test Setup      common_functionality_keywords.Open Window
 Test Teardown   common_functionality_keywords.Close Window
