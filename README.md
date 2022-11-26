@@ -30,13 +30,8 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
 - [Usage](#usage)
-- [Roadmap](#roadmap)
-- [Support](#support)
-- [Project assistance](#project-assistance)
-- [Contributing](#contributing)
-- [Authors & contributors](#authors--contributors)
+- [Authors](#authors)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 </details>
 
@@ -81,7 +76,7 @@
 > Run a single suit: python -m robot.run Tests/Accounts/accounts_tests.robot (This is the file name that contains the tests) <br />
 > Run a single test: python -m robot.run -t "Create new account" Tests/Accounts/accounts_tests.robot (Use the test name inside the " " and then the path location of the test**
 
-## Authors & contributors
+## Authors
 
 The original setup of this repository is by [Janio Abrantes](https://github.com/JanioAbrantes),
 [Katarina Mariano](https://github.com/KatarinaMariano-QA),
