@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation   Testing some functionalitys of the accounts page.
 
-Resource        Resources/common_functionality_keywords.robot
+Resource        ../Resources/common_functionality_keywords.robot
 Resource        accounts_steps.robot
 
 Test Setup      Run Keywords     common_functionality_keywords.Open Window
