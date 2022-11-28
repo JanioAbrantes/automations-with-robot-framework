@@ -55,7 +55,7 @@
 
 ### Built With
 
-> **Robot Framework, VS Code, Python and SeleniumLibrary**
+> **Robot Framework, Python and SeleniumLibrary**
 
 ## Getting Started
 
