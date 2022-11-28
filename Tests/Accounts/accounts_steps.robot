@@ -4,7 +4,7 @@ Documentation       The steps of the accounts_tests
 Library             FakerLibrary   locale=pt_BR
 Library             SeleniumLibrary
 
-Resource            Resources/accounts_page.robot
+Resource            ../Resources/accounts_page.robot
 
 *** Keywords ***
 The already logged in user is in the "addConta"'s page
