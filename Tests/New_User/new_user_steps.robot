@@ -4,7 +4,7 @@ Documentation   The steps of the new_user_tests
 Library         FakerLibrary   locale=pt_BR
 Library         SeleniumLibrary
 
-Resource        Resources/new_user_page.robot
+Resource        ../Resources/new_user_page.robot
 
 *** Keywords ***
 The user is in the "cadastro"'s page

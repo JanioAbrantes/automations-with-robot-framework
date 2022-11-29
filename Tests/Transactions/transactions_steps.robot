@@ -4,7 +4,7 @@ Documentation   The steps of the transactions_tests
 Library         FakerLibrary   locale=pt_BR
 Library         SeleniumLibrary
 
-Resource        Resources/transactions_page.robot
+Resource        ../Resources/transactions_page.robot
 
 *** Keywords ***
 The already logged in user has an already created account
