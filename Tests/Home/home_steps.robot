@@ -4,7 +4,7 @@ Documentation       The steps of the home_tests
 Library             FakerLibrary   locale=pt_BR
 Library             SeleniumLibrary
 
-Resource            Resources/home_page.robot
+Resource            ../Resources/home_page.robot
 
 *** Keywords ***
 The already logged in user is in the "home"'s page

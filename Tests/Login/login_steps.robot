@@ -4,7 +4,7 @@ Documentation       The steps of the login_tests
 Library             FakerLibrary   locale=pt_BR
 Library             SeleniumLibrary
 
-Resource            Resources/login_page.robot
+Resource            ../Resources/login_page.robot
 
 *** Keywords ***
 The user is in the "login"'s page
